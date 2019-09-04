@@ -1,0 +1,153 @@
+# File based on templates from https://github.com/alexkaratarakis/gitattributes
+
+# Documentation- git help gitattributes or https://git-scm.com/docs/gitattributes
+
+## Sections
+##----------------
+## DOCUMENTATION
+## SOURCE CODE
+## CONFIGS
+## LINTERS
+## DATA
+## GRAPHICS
+## DOCUMENTS -- needs work for diff conversions
+## EXECUTABLES
+## ARCHIVES
+
+# Auto detect text files and perform LF normalization
+* text=auto
+
+.editorconfig  text
+.gitattributes text
+.gitignore     text
+
+## DOCUMENTATION
+*.adoc      text
+*.markdown  text
+*.md        text
+*.mdwn      text
+*.mdown     text
+*.mkd       text
+*.mkdn      text
+*.mdtxt     text
+*.mdtext    text
+*.tex       text diff=tex
+*.textile   text
+*.txt       text
+readme      text
+*README*    text
+
+## SOURCE CODE
+*.bat      text eol=crlf
+*.cmd      text eol=crlf
+*.coffee   text
+*.css      text diff=css
+*.htm      text diff=html
+*.html     text diff=html
+*.inc      text
+*.java     text diff=java
+*.js       text
+*.jsp      text
+*.jspf     text
+*.jspx     text
+*.jsx      text
+*.less     text
+*.mustache text
+*.php      text diff=php
+*.pl       text diff=perl
+*.py       text diff=python
+*.rb       text diff=ruby
+*.sass     text
+*.scss     text
+*.sh       text eol=lf
+*.sql      text
+*.tag      text
+*.tagx     text
+*.tld      text
+*.ts       text
+*.tsx      text
+*.xhtml    text diff=html
+
+## CONFIGS
+*.bowerrc     text
+*.cnf         text
+*.conf        text
+*.config      text
+.babelrc      text
+.browserslistrc text
+.env          text
+.htaccess     text
+*.ini         text
+*.lock        text
+*.npmignore   text
+*.properties  text
+*.wsdl        text
+*.xml         text
+*.yaml        text
+*.yml         text
+browserslist  text
+Makefile      text
+makefile      text
+
+## LINTERS
+.csslintrc    text
+.eslintrc     text
+.htmlhintrc   text
+.jscsrc       text
+.jshintrc     text
+.jshintignore text
+.stylelintrc  text
+
+## DATA
+*.csv   text
+*.json  text
+*.tab   text
+*.tsv   text
+
+## GRAPHICS
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.tif   binary
+*.tiff  binary
+*.ico   binary
+# SVG treated as an asset (binary) by default. If you want to treat it as text,
+# comment-out the following line and uncomment the line after.
+*.svg   binary
+#*.svg   text
+*.eps   binary
+*.bmp   binary
+
+## DOCUMENTS
+*.doc  binary
+*.docx diff=astextplain
+*.pdf  binary diff=astextplain
+*.xls  binary
+*.xlsx 
+*.ppt  binary
+*.pptx 
+*.pdf  binary
+
+
+####################
+### These should not be in repo without good reason
+### They would be binary if needed
+
+## EXECUTABLES
+*.class  binary
+*.dll    binary
+*.ear    binary
+*.exe    binary
+*.jar    binary
+*.pyc    binary
+*.so     binary
+*.war    binary
+
+## ARCHIVES
+*.7z   binary
+*.gz   binary
+*.rar  binary
+*.tar  binary
+*.zip  binary
+

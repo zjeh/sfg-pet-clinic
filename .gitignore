@@ -1,0 +1,160 @@
+##############
+# compressed & packaged files generally should not be in repo
+# git has its own built in compression methods
+# packages should be built or obtained from source
+#   common exceptions are maven or gradle wrapper
+##############
+
+### Package Files ###
+*.jar
+*.war
+*.nar
+*.ear
+*.7z
+*.gz
+*.deb
+*.pkg
+*.rpm
+*.sit
+*.sitx
+*.tar
+*.rar
+*.zip
+*.zipx
+
+
+### VisualStudioCode ###
+.vscode/*
+# include these if most dev is w/ vscode
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json
+
+### Angular ###
+# compiled output
+/dist
+/tmp
+/app/**/*.js
+/app/**/*.js.map
+
+# dependencies
+/node_modules
+/bower_components
+
+### IDEA ###
+.idea
+*.iml
+*.ipr
+*.iws
+
+
+### Eclipse ###
+.classpath
+.project
+.settings/
+.metadata
+/bin/
+# Code Recommenders
+.recommenders
+# Spring Tool Suite
+.apt_generated
+.factorypath
+.springBeans
+.sts4-cache
+
+# Compiled java file
+*.class
+# jvm crash logs
+hs_err_pid*
+
+
+### Maven ###
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+dependency-reduced-pom.xml
+release.properties
+buildNumber.properties
+.mvn/timing.properties
+# Avoid ignoring Maven Wrapper jar file
+!.mvn/wrapper/maven-wrapper.jar
+
+### Gradle ###
+.gradle
+/build/
+# Ignore Gradle GUI config
+gradle-app.setting
+# Avoid ignoring Gradle wrapper jar file
+!gradle-wrapper.jar
+# Cache of project
+.gradletasknamecache
+
+
+### TestNG ###
+test-output/
+
+
+### Generics ###
+*.bak
+temp/
+tmp/
+*.tmp
+log/
+logs/
+*.log
+
+# workaround to keep empty dir in repo
+!**/.gitkeep
+
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+# Session
+Session.vim
+# Temporary
+.netrwhist
+*~
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+# Dump file
+*.stackdump
+# Folder config file
+[Dd]esktop.ini
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+# Windows shortcuts
+*.lnk
+
+### Linux ###
+*~
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
+# KDE directory preferences
+.directory
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
+

@@ -1,0 +1,41 @@
+# http://editorconfig.org
+# see https://editorconfig.org/#download 
+# for editor plugins
+
+root = true
+
+# Default for all files
+[*]
+charset = utf-8
+end_of_line = lf
+# defaults for consistent whitespace
+indent_size = 2
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+#======================================
+
+# Do not trim Markdown files
+[*.md]
+indent_size = 4
+max_line_length = off
+trim_trailing_whitespace = false
+
+[*.{java,groovy}]
+# not supported by all plugins
+block_comment_start = /*
+block_comment =  *
+block_comment_end = */
+
+# lines can get very long
+[*.{xml,xsd}]
+# not supported by all plugins
+max_line_length = off
+block_comment_start = <!--
+block_comment = unset
+block_comment_end = -->
+
+# Windows script 
+[*.{bat,cmd}]
+end_of_line = crlf
+
